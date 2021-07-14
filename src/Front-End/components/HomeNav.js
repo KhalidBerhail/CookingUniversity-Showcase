@@ -16,6 +16,9 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
 `;
 
 //styled component for text logo
@@ -80,11 +83,13 @@ const Line = styled.span`
 
 //styled component for the Overlay used when width of page is smaller
 const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   height: ${props => (props.open ? "91vh" : 0)};
   width: 100vw;
   background: #1c2022;
   transition: height 0.4s ease-in-out;
+  
+  z-index:2000;
 
   @media (min-width: 769px) {
     display: none;

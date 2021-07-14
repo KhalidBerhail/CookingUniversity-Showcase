@@ -42,5 +42,47 @@
   transition: margin-left 0.5s; /* If you want a transition effect */
   padding: 20px;
   margin-left: 50px;
-  width: 100%;
+}
+
+.recommended-title {
+  font-size: 20px;
+  font-weight: bolder;
+  float: left;
+  clear: both;
+}
+
+#chef-group {
+  clear: left;
+  display: flex;
+  margin-left: -1%;
+}
+
+#scard-group {
+  clear: left;
+  display: flex;
+  margin-left: 0%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar li {
+    font-size: 18px;
+  }
+}
+
+/*MainPromt style*/
+
+.username {
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  height: 20px;
+  float: left;
+}
+
+.parag-cnt {
+  clear: left;
+  text-align: left;
+  width: 50%;
 }

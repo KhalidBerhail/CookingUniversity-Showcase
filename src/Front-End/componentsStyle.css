@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville:wght@700&family=Otomanopee+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Otomanopee+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville:wght@700&family=Otomanopee+One&display=swap");
 .chefDisplay {
   max-width: 250px;
   max-height: 60px;
@@ -9,6 +8,8 @@
   border: 0.5px solid white;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 50px;
+  transition: 0.3s;
 }
 
 .flexContainer {
@@ -173,19 +174,20 @@
 /* SmallCard styling*/
 
 .scard-container {
-  margin-top: 10%;
-  margin-left: 10%;
-  width: 300px;
-  height: 180px;
+  min-width: 24.5%;
+  min-height: 190px;
+  max-width: 20%;
+  max-height: 190px;
   background-image: linear-gradient(rgba(85, 82, 82, 0.5), rgba(0, 0, 0, 0.5)),
     url("../Front-End/assets/meal.jpg");
   background-size: contain;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 1%;
 }
 
 .scard-content {
-  width: 60%;
+  width: 70%;
   height: 100%;
   margin-left: 1%;
 }
@@ -213,20 +215,23 @@
   height: 30px;
   border-radius: 50%;
   float: left;
+  margin-top: -5%;
 }
 
 .scard-author {
-  font-family: "Abril Fatface";
+  font-family: "Libre Baskerville", serif;
   color: white;
   font-size: 14px;
+  font-weight: lighter;
   float: left;
-  margin-top: 1px;
+  margin-top: -3%;
   margin-left: 10px;
 }
 
 .scard-expert {
-  font-family: "Abril Fatface";
+  font-family: "Libre Baskerville", serif;
   font-size: 12px;
+  font-weight: lighter;
   color: #f9a374;
   float: left;
   margin-top: -16px;
@@ -236,7 +241,7 @@
 .scard-meal-info {
   width: 100%;
   height: 20px;
-  margin-top: 22%;
+  margin-top: 19%;
   display: flex;
   margin-left: 10px;
 }
@@ -304,6 +309,7 @@
 }
 
 .nav-wrapper {
+  margin-top: 9vh;
   display: flex;
   position: relative;
 }
@@ -326,8 +332,8 @@
 
 .nav-wrapper .sidebar .followed-list .followed-item {
   padding: 15px;
-  border-bottom: 1px solid #bdb8d7;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #bdb8d7 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -341,7 +347,7 @@
 }
 
 .nav-wrapper .sidebar .followed-list .followed-item:hover {
-  background-color: #594f8d;
+  background-color: #fab691;
 }
 
 .nav-wrapper .sidebar .followed-list .followed-item:hover a {
@@ -356,6 +362,9 @@
   overflow: hidden;
 }
 
+.followed-info {
+}
+
 .nav-wrapper .sidebar .social_media {
   position: absolute;
   bottom: 0;
@@ -367,7 +376,7 @@
 .nav-wrapper .sidebar .social_media a {
   display: block;
   width: 40px;
-  background: #594f8d;
+  background: #fab691;
   height: 40px;
   line-height: 45px;
   text-align: center;
@@ -418,6 +427,11 @@
   display: flex;
 }
 
+.sidebar-title {
+  margin-left: -90px;
+  transition: 0.3s;
+}
+
 .sidebar-close {
   width: 30px;
   height: 30px;
@@ -466,28 +480,4 @@
   float: left;
   margin-top: -16px;
   margin-left: 46px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar li {
-    font-size: 18px;
-  }
-}
-
-/*MainPromt style*/
-
-.username {
-  font-family: "Abril Fatface", cursive;
-  font-size: 40px;
-  height: 20px;
-  float: left;
-}
-
-.parag-cnt {
-  clear: left;
-  text-align: left;
-  width: 50%;
 }
