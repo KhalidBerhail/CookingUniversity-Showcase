@@ -29,6 +29,7 @@ class FollowedBar extends React.Component {
               className="sidebar-close"
               onClick={this.collapseSideBar}
               src={this.state.collapsed ? rightArrow : leftArrow}
+              alt="navLogo"
             ></img>
           </div>
           <ul className="followed-list">
@@ -70,27 +71,30 @@ class FollowedBar extends React.Component {
     var w = window.innerWidth;
     const chefDisplays = document.getElementsByClassName("chefDisplay");
     if (this.state.collapsed) {
-        document.getElementById("sidebar").style.width = "200px";
-        if(w>1197){
-          document.getElementById("page-content").style.marginLeft = "200px";
-        }
-        
-        document.getElementsByClassName("sidebar-close")[0].style.marginLeft = "50px";
-        document.getElementsByClassName("sidebar-title")[0].style.marginLeft = "0px";
-       chefDisplays[0].style.marginLeft = "20px";
-       chefDisplays[1].style.marginLeft = "20px";
-       chefDisplays[2].style.marginLeft = "20px";
-       chefDisplays[3].style.marginLeft = "20px";
-      
+      document.getElementById("sidebar").style.width = "200px";
+      if (w > 1197) {
+        document.getElementById("page-content").style.marginLeft = "200px";
+      }
+
+      document.getElementsByClassName("sidebar-close")[0].style.marginLeft =
+        "50px";
+      document.getElementsByClassName("sidebar-title")[0].style.marginLeft =
+        "0px";
+      chefDisplays[0].style.marginLeft = "20px";
+      chefDisplays[1].style.marginLeft = "20px";
+      chefDisplays[2].style.marginLeft = "20px";
+      chefDisplays[3].style.marginLeft = "20px";
     } else {
-        document.getElementById("sidebar").style.width = "0px";
-        document.getElementsByClassName("sidebar-close")[0].style.marginLeft = "10px";
-        document.getElementById("page-content").style.marginLeft = "50px";
-        document.getElementsByClassName("sidebar-title")[0].style.marginLeft = "-90px";
-        chefDisplays[0].style.marginLeft = "50px";
-        chefDisplays[1].style.marginLeft = "50px";
-        chefDisplays[2].style.marginLeft = "50px";
-        chefDisplays[3].style.marginLeft = "50px";
+      document.getElementById("sidebar").style.width = "0px";
+      document.getElementsByClassName("sidebar-close")[0].style.marginLeft =
+        "10px";
+      document.getElementById("page-content").style.marginLeft = "50px";
+      document.getElementsByClassName("sidebar-title")[0].style.marginLeft =
+        "-90px";
+      chefDisplays[0].style.marginLeft = "50px";
+      chefDisplays[1].style.marginLeft = "50px";
+      chefDisplays[2].style.marginLeft = "50px";
+      chefDisplays[3].style.marginLeft = "50px";
     }
     this.setState({
       collapsed: !this.state.collapsed,

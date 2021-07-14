@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *Custom nav bar for the home page
  */
@@ -17,15 +17,15 @@ const Nav = styled.nav`
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
   position: fixed;
-  top: 0; 
-  width: 100%; 
+  top: 0;
+  width: 100%;
 `;
 
-//styled component for text logo
+/*styled component for text logo
 const Logo = styled.h1`
   font-size: 25px;
   color: white;
-`;
+`;*/
 
 //styled component for the nav menu
 const Menu = styled.ul`
@@ -66,7 +66,6 @@ const NavIcon = styled.button`
   }
 `;
 
-
 const Line = styled.span`
   display: block;
   border-radius: 50px;
@@ -77,19 +76,19 @@ const Line = styled.span`
   transition: width 0.4s ease-in-out;
 
   :nth-child(2) {
-    width: ${props => (props.open ? "40%" : "70%")};
+    width: ${(props) => (props.open ? "40%" : "70%")};
   }
 `;
 
 //styled component for the Overlay used when width of page is smaller
 const Overlay = styled.div`
   position: fixed;
-  height: ${props => (props.open ? "91vh" : 0)};
+  height: ${(props) => (props.open ? "91vh" : 0)};
   width: 100vw;
   background: #1c2022;
   transition: height 0.4s ease-in-out;
-  
-  z-index:2000;
+
+  z-index: 2000;
 
   @media (min-width: 769px) {
     display: none;
@@ -105,7 +104,7 @@ const OverlayMenu = styled.ul`
   transform: translate(-50%, -50%);
 
   li {
-    opacity: ${props => (props.open ? 1 : 0)};
+    opacity: ${(props) => (props.open ? 1 : 0)};
     font-size: 25px;
     margin: 50px 0px;
     transition: opacity 0.4s ease-in-out;
@@ -122,8 +121,7 @@ const HomeNav = () => {
   return (
     <>
       <Nav>
-        
-        <img src={logo} style={{width : "50px"}}/>
+        <img src={logo} style={{ width: "50px" }} alt="navLogo" />
         <Menu>
           <Item>
             <Link target="#" href="https://www.instagram.com/igor_dumencic/">
