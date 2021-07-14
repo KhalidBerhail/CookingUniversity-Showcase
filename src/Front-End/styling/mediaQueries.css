@@ -1,0 +1,296 @@
+/*Media queries to make small meall cards responsive*/
+@media (max-width: 1065px) {
+  #scard-group {
+    min-width: 940px;
+    max-width: 940px;
+    max-height: 190px;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+  }
+
+  .scard-container {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    width: 300px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 990px) {
+  #scard-group {
+    min-width: 700px;
+    max-width: 700px;
+    max-height: 190px;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+  }
+
+  .scard-container {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    width: 300px;
+    margin-left: 6%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 768px) {
+  #scard-group {
+    min-width: 700px;
+    max-width: 700px;
+    max-height: 190px;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+  }
+
+  .scard-container {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    width: 300px;
+    margin-left: 4%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 736px) {
+  #scard-group {
+    min-width: 700px;
+    max-width: 700px;
+    max-height: 190px;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+  }
+
+  .scard-container {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    width: 300px;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 707px) {
+  #scard-group {
+    min-width: 700px;
+    max-width: 700px;
+    max-height: 190px;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+  }
+
+  .scard-container {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    width: 300px;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 690px) {
+  #scard-group {
+    min-width: 600px;
+    max-width: 600px;
+    max-height: 250px;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+  }
+
+  .scard-container {
+    min-width: 260px !important;
+    max-width: 260px !important;
+    width: 300px;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 624px) {
+  #scard-group {
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 190px;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+    margin-left: 20%;
+  }
+
+  .scard-container {
+    min-width: 290px !important;
+    max-width: 290px !important;
+    width: 300px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 593px) {
+  #scard-group {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 470px) {
+  #scard-group {
+    margin-left: 0%;
+  }
+}
+
+/*Media queries to make chef display cards responsive*/
+@media (max-width: 1266px) {
+  .chefDisplay {
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 1110px) {
+  .chefDisplay {
+    margin-left: 50px !important;
+    margin-bottom: 10px;
+  }
+
+  #chef-group {
+    min-width: 900px;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 968px) {
+  .chefDisplay {
+    margin-left: 40px !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 938px) {
+  .chefDisplay {
+    margin-left: 20px !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 878px) {
+  .chefDisplay {
+    margin-left: 50px !important;
+    margin-bottom: 10px;
+  }
+
+  #chef-group {
+    min-width: 700px;
+    max-width: 700px;
+    margin-left: +40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #chef-group {
+    min-width: 700px;
+    max-width: 700px;
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 736px) {
+  #chef-group {
+    min-width: 600px;
+    max-width: 600px;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 690px) {
+  .chefDisplay {
+    margin-left: 15px !important;
+    margin-bottom: 10px;
+  }
+
+  #chef-group {
+    min-width: 530px;
+    max-width: 530px;
+  }
+}
+
+@media (max-width: 600px) {
+  .chefDisplay {
+    margin-left: 15px !important;
+    margin-bottom: 10px;
+  }
+
+  #chef-group {
+    min-width: 500px;
+    max-width: 500px;
+    margin-left: 22%;
+  }
+}
+
+@media (max-width: 593px) {
+  #chef-group {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 470px) {
+  #chef-group {
+    margin-left: 0%;
+  }
+}
+
+/*Media queries for the prompt title*/
+@media (max-width: 452px) {
+  .username {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 337px) {
+  .username {
+    font-size: 22px;
+  }
+
+  .prompt-parag {
+    font-size: 15px;
+  }
+}
+
+/*Media query to stop the cards from overflowing when the nav is open*/
+@media (max-width: 1197px) {
+  .nav-wrapper {
+    z-index: 1000;
+  }
+
+  #page-content {
+    transition: none;
+    margin-left: 50px;
+  }
+}

@@ -1,9 +1,8 @@
 
 import './App.css';
 import "../src/Front-End/componentsStyle.css";
-import MealDisplay from './Front-End/components/MealDisplay';
+import "../src/Front-End/styling/mediaQueries.css";
 import HomeNav from './Front-End/components/HomeNav';
-import SearchBar from './Front-End/components/SearchBar';
 import FollowedBar from './Front-End/components/FollowedBar';
 import SmallCard from './Front-End/components/SmallCard';
 import MainPrompt from './Front-End/components/MainPrompt';
