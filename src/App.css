@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/*Added CSS*/
+#page-content {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+  margin-left: 50px;
+  width: 100%;
+}
