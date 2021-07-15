@@ -69,7 +69,7 @@ class FollowedBar extends React.Component {
   //Function that opens or collapses the side bar on click
   collapseSideBar() {
     var w = window.innerWidth;
-    const chefDisplays = document.getElementsByClassName("chefDisplay");
+    const chefDisplays = document.getElementsByClassName("chef-display");
     if (this.state.collapsed) {
       document.getElementById("sidebar").style.width = "200px";
       if (w > 1197) {

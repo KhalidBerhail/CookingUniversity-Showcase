@@ -1,0 +1,30 @@
+
+[
+    {
+        "id":0,
+        "name" : "Yannick Alléno",
+        "pfp" : "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcR-MI2n1Cp_kWaY_HGjcLpt0SJNvchVMU9ClZzM9xDIf7svHJC5gu-GLdf3D8Uy",
+        "specialty": "Gastronomie"
+    },
+
+    {
+        "id":1,
+        "name" : "Adeline Grattard",
+        "pfp" : "https://www.lechef.com/wp-content/uploads/2018/09/287_Page_46_Image_0001-401x633.jpg",
+        "specialty": " Cuisine chinoise"
+    },
+
+    {
+        "id":2,
+        "name" : "Michel Guérard",
+        "pfp" : "https://www.lechef.com/wp-content/uploads/2016/01/Michel_Gue__rard.jpg",
+        "specialty": "Gastronomie"
+    },
+
+    {
+        "id":3,
+        "name" : "Elizabeth Falkner",
+        "pfp" : "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/9/18/2/COAT_Elizabeth-Falkner-02-Horz_s4x3.jpg.rend.hgtvcom.966.725.suffix/1371611543531.jpeg",
+        "specialty": "patisserie"
+    }
+]

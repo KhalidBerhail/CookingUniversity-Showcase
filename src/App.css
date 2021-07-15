@@ -63,6 +63,11 @@
   margin-left: 0%;
 }
 
+#carousel-container {
+  margin-top: 10px;
+  clear: both;
+}
+
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
