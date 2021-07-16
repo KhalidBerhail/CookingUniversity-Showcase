@@ -7,6 +7,7 @@
       "thumbnail" :"https://i.f1g.fr/media/madame/656x/sites/default/files/img/2008/01/koulibiac-aux-galettes-de-sarrasin.jpg",
       "duration" : 20,
       "rating" : 4.5,
+      "level" : "Hard",
        "chef" : {
                     "name" : "Yannick Alléno",
                     "pfp" : "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcR-MI2n1Cp_kWaY_HGjcLpt0SJNvchVMU9ClZzM9xDIf7svHJC5gu-GLdf3D8Uy",
@@ -21,6 +22,7 @@
         "thumbnail" :"https://static.lexpress.fr/medias_10394/w_1365,h_593,c_crop,x_0,y_612/w_960,h_540,c_fill,g_north/v1429174567/bao-d-adeline-grattard-chef-du-yam-tcha_5321971.jpg",
         "duration" : 20,
         "rating" : 4.2,
+        "level" : "Easy",
         "chef" : {
             "name" : "Adeline Grattard",
             "pfp" : "https://www.lechef.com/wp-content/uploads/2018/09/287_Page_46_Image_0001-401x633.jpg",
@@ -35,6 +37,7 @@
         "thumbnail" :"https://media-cdn.tripadvisor.com/media/photo-s/17/16/87/1a/le-filet-de-boeuf-sur.jpg",
         "duration" : 25,
         "rating" : 4.6,
+        "level" : "Hard",
         "chef" : {
             "name" : "Michel Guérard",
             "pfp" : "https://www.lechef.com/wp-content/uploads/2016/01/Michel_Gue__rard.jpg",
@@ -49,6 +52,7 @@
         "thumbnail" :"https://junandus.com.my/wp-content/uploads/2014/10/Belgian-Chocolate-Mousse_edit-01.jpg",
         "duration" : 12,
         "rating" : 4.5,
+        "level" : "Easy",
         "chef" : {
             "name" : "Elizabeth Falkner",
             "pfp" : "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/9/18/2/COAT_Elizabeth-Falkner-02-Horz_s4x3.jpg.rend.hgtvcom.966.725.suffix/1371611543531.jpeg",

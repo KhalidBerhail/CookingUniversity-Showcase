@@ -3,25 +3,28 @@
  */
 import "../componentsStyle.css";
 import React from "react";
+import {FaStar} from "react-icons/fa"
+
 
 class SmallCard extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
 
-    this.state={
+    this.state = {
       mealId: this.props.key,
       mealThumb: this.props.mealThumb,
+      mealLevel: this.props.mealLevel,
+      mealTime: this.props.mealTime,
+      mealRating: this.props.mealRating,
       title: this.props.mealTitle,
       categorie: this.props.mealCategorie,
       chef: this.props.chef
     };
   }
 
-
   render() {
     return (
-      <div className="scard-container" style={{backgroundImage: `linear-gradient(rgba(85, 82, 82, 0.5), rgba(0, 0, 0, 0.5)),url("`+this.state.mealThumb+`")`}}>
+      /*<div className="scard-container" style={{backgroundImage: `linear-gradient(rgba(85, 82, 82, 0.5), rgba(0, 0, 0, 0.5)),url("`+this.state.mealThumb+`")`}}>
         <div className="scard-content">
           <div className="scard-title">
             <p className="scard-p">
@@ -40,6 +43,39 @@ class SmallCard extends React.Component {
             <button className="scard-meal-time">15 min</button>
             <button className="scard-meal-level">Easy</button>
             <button className="scard-meal-rating">5 stars</button>
+          </div>
+        </div>
+      </div>*/
+      <div className="scard-container">
+        <div className="scard-top-container">
+          <div className="scard-title-section">
+            <p className="scard-parag">{this.state.title}</p>
+          </div>
+          <div className="scard-empty-section"></div>
+        </div>
+
+        <div className="scard-info-section">
+          <div className="scard-pfp-container">
+            <img className="scard-pfp" alt="img" src={this.state.chef.pfp} />
+          </div>
+          <div className="scard-info-container">
+            <p className="scard-info-name">{this.state.chef.name}</p>
+            <p className="scard-info-spec">{this.state.chef.specialty}</p>
+          </div>
+        </div>
+        <div className="scard-buttons-section">
+          <div className="scard-buttons-space"></div>
+          <div className="scard-buttons-left">
+            <button className="scard-time">{this.state.mealTime} min</button>
+            <button className="scard-level">{this.state.mealLevel}</button>
+          </div>
+          <div className="scard-buttons-right">
+            <button className="scard-rating">
+              <div className="scard-number">{this.state.mealRating}</div>
+              <div className="scard-star-container">
+                <FaStar className="scard-star"></FaStar>
+              </div>
+            </button>
           </div>
         </div>
       </div>

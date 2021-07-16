@@ -166,13 +166,13 @@
 
 /*Media queries to make chef display cards responsive*/
 @media (max-width: 1266px) {
-  .chefDisplay {
+  .chef-display {
     margin-left: 10px !important;
   }
 }
 
 @media (max-width: 1110px) {
-  .chefDisplay {
+  .chef-display {
     margin-left: 50px !important;
     margin-bottom: 10px;
   }
@@ -187,21 +187,21 @@
 }
 
 @media (max-width: 968px) {
-  .chefDisplay {
+  .chef-display {
     margin-left: 40px !important;
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 938px) {
-  .chefDisplay {
+  .chef-display {
     margin-left: 20px !important;
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 878px) {
-  .chefDisplay {
+  .chef-display {
     margin-left: 50px !important;
     margin-bottom: 10px;
   }
@@ -230,7 +230,7 @@
 }
 
 @media (max-width: 690px) {
-  .chefDisplay {
+  .chef-display {
     margin-left: 15px !important;
     margin-bottom: 10px;
   }
@@ -242,7 +242,7 @@
 }
 
 @media (max-width: 600px) {
-  .chefDisplay {
+  .chef-display {
     margin-left: 15px !important;
     margin-bottom: 10px;
   }

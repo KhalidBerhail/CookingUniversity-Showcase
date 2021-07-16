@@ -21,15 +21,6 @@ class ChefDisplay extends React.Component {
 
   render() {
     return (
-      /*<div className="chefDisplay">
-        <div className="flexContainer">
-          <div className="picHolder">
-            <img className="pic" alt="img" src={this.state.pfpPath} />
-          </div>
-          <p className="displayTitle">{this.state.chefName}</p>
-        </div>
-        <p className="displayText">{this.state.specialty}</p>
-      </div>*/
       <div className="chef-display">
         <div className="chef-pic-section">
           <div className="pic-container">

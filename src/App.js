@@ -51,6 +51,9 @@ function App() {
                 chef={meal.chef}
                 mealThumb={meal.thumbnail}
                 mealTitle={meal.title}
+                mealLevel={meal.level}
+                mealTime={meal.duration}
+                mealRating={meal.rating}
               />
             ))}
           </div>
