@@ -4,7 +4,6 @@
 
 import "../componentsStyle.css";
 import React from "react";
-import pfp from "../assets/chef.jpg";
 
 class ChefDisplay extends React.Component {
 

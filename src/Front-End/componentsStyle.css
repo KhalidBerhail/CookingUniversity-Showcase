@@ -407,7 +407,8 @@ Chef display styling
   max-height: 20%;
   display: flex;
 }
-
+#Top-courses {
+}
 .scard-buttons-section {
   min-width: 100%;
   max-width: 100%;
@@ -721,3 +722,46 @@ Chef display styling
   margin-top: -16px;
   margin-left: 46px;
 }
+/*recommended holder style*/
+
+.reccard-container {
+  min-width: 90%;
+  min-height: 190px;
+  max-height: 190px;
+  max-width: 90%;
+  background-image: linear-gradient(rgba(85, 82, 82, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Front-End/assets/meal.jpg");
+  background-size: contain;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 1%;
+}
+
+/**/
+.juJgmK {
+  z-index: 2;
+}
+
+/*
+.scard-container:hover {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.scard-container {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}*/
+
+.scard-container {
+  will-change: transform;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+
+.scard-container:hover {
+  transition: transform 125ms;
+  transform: translateY(-10px);
+}
+
+/*checkoutForm*/

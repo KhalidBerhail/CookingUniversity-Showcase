@@ -4,9 +4,9 @@
 
 import "../componentsStyle.css";
 import React from "react";
-import pfp from "../assets/chef.jpg";
 import rightArrow from "../assets/right-arrow.png";
 import leftArrow from "../assets/left-arrow.png";
+import chefs from "../waterringAssets/chefs.json";
 
 class FollowedBar extends React.Component {
   constructor(props) {
@@ -33,33 +33,20 @@ class FollowedBar extends React.Component {
             ></img>
           </div>
           <ul className="followed-list">
-            <li className="followed-item">
-              <div className="followed-info">
-                <div className="followed-pfp-cnt">
-                  <img className="followed-pfp" alt="img" src={pfp} />
+            
+            {
+              chefs.map((chef) => (
+                <li className="followed-item">
+                <div className="followed-info">
+                  <div className="followed-pfp-cnt">
+                    <img className="followed-pfp" alt="img" src={chef.pfp} />
+                  </div>
+                  <p className="followed-name">{chef.name}</p>
+                  <p className="followed-expert">{chef.specialty}</p>
                 </div>
-                <p className="followed-name">Gordan Ramezi</p>
-                <p className="followed-expert">experties</p>
-              </div>
-            </li>
-            <li className="followed-item">
-              <div className="followed-info">
-                <div className="followed-pfp-cnt">
-                  <img className="followed-pfp" alt="img" src={pfp} />
-                </div>
-                <p className="followed-name">Gordan Ramezi</p>
-                <p className="followed-expert">experties</p>
-              </div>
-            </li>
-            <li className="followed-item">
-              <div className="followed-info">
-                <div className="followed-pfp-cnt">
-                  <img className="followed-pfp" alt="img" src={pfp} />
-                </div>
-                <p className="followed-name">Gordan Ramezi</p>
-                <p className="followed-expert">experties</p>
-              </div>
-            </li>
+              </li>
+              ))
+            }
           </ul>
         </div>
       </div>
