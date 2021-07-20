@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-div,
-textarea,
-input {
-}
-
 .form-container {
   max-width: 510px;
   min-width: 324px;
