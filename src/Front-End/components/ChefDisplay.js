@@ -6,15 +6,14 @@ import "../componentsStyle.css";
 import React from "react";
 
 class ChefDisplay extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
 
-    this.state={
+    this.state = {
       id: this.props.key,
       pfpPath: this.props.pfp,
       chefName: this.props.name,
-      specialty:this. props.specialty,
+      specialty: this.props.specialty,
     };
   }
 
@@ -23,19 +22,18 @@ class ChefDisplay extends React.Component {
       <div className="chef-display">
         <div className="chef-pic-section">
           <div className="pic-container">
-          <img className="chef-pfp" alt="img" src={this.state.pfpPath} />
+            <img className="chef-pfp" alt="img" src={this.state.pfpPath} />
           </div>
         </div>
 
         <div className="chef-info-section">
           <div className="chef-info-name">
-          <p className="display-title">{this.state.chefName}</p>
+            <p className="display-title">{this.state.chefName}</p>
           </div>
           <div className="chef-info-specialty">
-          <p className="display-text">{this.state.specialty}</p>
+            <p className="display-text">{this.state.specialty}</p>
           </div>
         </div>
-        
       </div>
     );
   }

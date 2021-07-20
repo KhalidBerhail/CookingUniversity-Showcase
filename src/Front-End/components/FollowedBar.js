@@ -35,8 +35,8 @@ class FollowedBar extends React.Component {
           <ul className="followed-list">
             
             {
-              chefs.map((chef) => (
-                <li className="followed-item">
+              chefs.map((chef,index) => (
+                <li className="followed-item" key={index}>
                 <div className="followed-info">
                   <div className="followed-pfp-cnt">
                     <img className="followed-pfp" alt="img" src={chef.pfp} />

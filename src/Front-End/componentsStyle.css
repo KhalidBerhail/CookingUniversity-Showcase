@@ -365,9 +365,7 @@ Chef display styling
   min-height: 190px;
   max-width: 20%;
   max-height: 190px;
-  background-image: linear-gradient(rgba(85, 82, 82, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../Front-End/assets/meal.jpg");
-  background-size: contain;
+  background-size: 100% 190px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-right: 1%;
@@ -731,7 +729,7 @@ Chef display styling
   max-width: 90%;
   background-image: linear-gradient(rgba(85, 82, 82, 0.5), rgba(0, 0, 0, 0.5)),
     url("../Front-End/assets/meal.jpg");
-  background-size: contain;
+  background-size: 100% 190px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-right: 1%;

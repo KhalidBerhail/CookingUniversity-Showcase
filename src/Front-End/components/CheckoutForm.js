@@ -1,12 +1,13 @@
 import "../styling/contact.css";
 import React from "react";
 import axios from "axios";
+import { withRouter } from "react-router-dom";
 
 class CheckoutForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      productId:this.props.productId,
+      productId: this.props.productId,
       firstName: "",
       lastName: "",
       email: "",
@@ -17,24 +18,27 @@ class CheckoutForm extends React.Component {
   }
 
   handleSubmit(event) {
-    axios.post('http://127.0.0.1:3001/orders', {
+    axios
+      .post("http://127.0.0.1:3001/orders", {
         _productId: this.state.productId,
         firstName: this.state.firstName,
-        lastName:this.state.lastName,
-        email:this.state.email
+        lastName: this.state.lastName,
+        email: this.state.email,
       })
-    .then(response => {
-      console.log(response);
-    }) .catch(error => {
-      console.log(error);
-    });
-    alert('A name was submitted: ' + this.state.firstName);
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    alert("Votre commande sera traité dans les meilleurs délais");
+    this.props.history.push("/Home");
     event.preventDefault();
   }
 
   handleChange(event) {
     this.setState({
-        [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   }
 
@@ -122,4 +126,4 @@ class CheckoutForm extends React.Component {
   }
 }
 
-export default CheckoutForm;
+export default withRouter(CheckoutForm);

@@ -70,17 +70,4 @@ export default class CarouselMobile extends Component {
     );
   }
 }
-//replace the div in the componenet with item
- class item extends Component {
-  render() {
-    return (
-        <div className="item">
-        <div className="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
-            <h3 className="uk-card-title">{this.props.title}</h3>
-            <p>{this.props.subtitle}</p>
-            <h3>{this.props.text}</h3>
-        </div>
-        </div>
-    );
-  }
-}
+
