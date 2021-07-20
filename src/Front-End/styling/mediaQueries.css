@@ -1,8 +1,8 @@
 /*Media queries to make small meall cards responsive*/
 @media (max-width: 1065px) {
   #scard-group {
-    min-width: 940px;
-    max-width: 940px;
+    min-width: 930px;
+    max-width: 930px;
     max-height: 190px;
     float: left;
     clear: both;
@@ -17,6 +17,30 @@
     width: 300px;
     margin-bottom: 10px;
     transition: 0.3s;
+  }
+}
+
+@media (max-width: 999px) {
+  #scard-group {
+    min-width: 924px;
+    max-width: 924px;
+  }
+
+  .scard-container {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    width: 300px;
+    margin-left: 6%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 993px) {
+  #scard-group {
+    min-width: 700px;
+    max-width: 700px;
+    max-height: 190px;
   }
 }
 
@@ -108,16 +132,23 @@
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 694px) {
+  #chef-group {
+    min-width: 330px !important;
+    max-width: 330px !important;
+    margin-left: 20% !important;
+  }
   #scard-group {
-    min-width: 600px;
-    max-width: 600px;
+    min-width: 330px !important;
+    max-width: 330px !important;
     max-height: 250px;
     float: left;
     clear: both;
     display: flex;
     flex-wrap: wrap;
     transition: 0.3s;
+    margin-left: 20%;
+    margin-right: 0;
   }
 
   .scard-container {
@@ -156,11 +187,18 @@
   #scard-group {
     margin-left: 10%;
   }
+
+  #chef-group {
+    margin-left: 13% !important;
+  }
 }
 
 @media (max-width: 470px) {
   #scard-group {
     margin-left: 0%;
+  }
+  #chef-group {
+    margin-left: 0% !important;
   }
 }
 
@@ -193,6 +231,14 @@
   }
 }
 
+@media (max-width: 960px) {
+  #chef-group {
+    min-width: 700px;
+    max-width: 700px;
+    margin-left: 60px;
+  }
+}
+
 @media (max-width: 938px) {
   .chef-display {
     margin-left: 20px !important;
@@ -213,11 +259,38 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 809px) {
   #chef-group {
-    min-width: 700px;
-    max-width: 700px;
-    margin-left: -15px;
+    min-width: 600px;
+    max-width: 600px;
+    margin-left: +40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .parag-cnt {
+    min-width: 80%;
+  }
+}
+
+@media (max-width: 769px) {
+  #chef-group {
+    min-width: 600px;
+    max-width: 600px;
+    margin-left: 17px;
+  }
+
+  #scard-group {
+    min-width: 650px;
+    max-width: 650px;
+  }
+
+  .scard-container {
+    min-width: 270px !important;
+    max-width: 270px !important;
+    width: 270px;
+    margin-bottom: 10px;
+    transition: 0.3s;
   }
 }
 
@@ -266,7 +339,28 @@
   }
 }
 
+@media (max-width: 399px) {
+  #chef-group {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    margin-left: 0%;
+  }
+
+  #scard-group {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    margin-left: 0%;
+  }
+}
+
 /*Media queries for the prompt title*/
+
+@media (max-width: 480px) {
+  .username {
+    font-size: 27px;
+  }
+}
+
 @media (max-width: 452px) {
   .username {
     font-size: 27px;
@@ -293,4 +387,8 @@
     transition: none;
     margin-left: 50px;
   }
+}
+
+.App {
+  text-align: left;
 }
